@@ -51,7 +51,7 @@
         </dependency>
         <!--热部署-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
+            <groupId>org.springframework</groupId>
             <artifactId>springloaded</artifactId>
         </dependency>
         <dependency>
@@ -67,8 +67,12 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-actuator</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
