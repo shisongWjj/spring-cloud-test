@@ -25,7 +25,7 @@ public class Dept implements Serializable{
     }
 
     public static void main(String[] args) {
-        Dept dept = new Dept();
-        dept.setDeptno(11L).setDb_source("db01").setDname("RD");
+        /*Dept dept = new Dept();
+        dept.setDeptno(11L).setDb_source("db01").setDname("RD");*/
     }
 }
