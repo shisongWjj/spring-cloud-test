@@ -4,7 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/microservicecloud-consumer-dept-80/microservicecloud-consumer-dept-80.iml" filepath="$PROJECT_DIR$/microservicecloud-consumer-dept-80/microservicecloud-consumer-dept-80.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicecloud-eureka-7001/microservicecloud-eureka-7001.iml" filepath="$PROJECT_DIR$/microservicecloud-eureka-7001/microservicecloud-eureka-7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicecloud-eureka-7002/microservicecloud-eureka-7002.iml" filepath="$PROJECT_DIR$/microservicecloud-eureka-7002/microservicecloud-eureka-7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicecloud-eureka-7003/microservicecloud-eureka-7003.iml" filepath="$PROJECT_DIR$/microservicecloud-eureka-7003/microservicecloud-eureka-7003.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicecloud-provider-dept-8081/microservicecloud-provider-dept-8081.iml" filepath="$PROJECT_DIR$/microservicecloud-provider-dept-8081/microservicecloud-provider-dept-8081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicecloud-provider-dept-8082/microservicecloud-provider-dept-8082.iml" filepath="$PROJECT_DIR$/microservicecloud-provider-dept-8082/microservicecloud-provider-dept-8082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicecloud-provider-dept-8083/microservicecloud-provider-dept-8083.iml" filepath="$PROJECT_DIR$/microservicecloud-provider-dept-8083/microservicecloud-provider-dept-8083.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicespringcloud/microservicespringcloud.iml" filepath="$PROJECT_DIR$/microservicespringcloud/microservicespringcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicespringcloudapi/microservicespringcloud-api.iml" filepath="$PROJECT_DIR$/microservicespringcloudapi/microservicespringcloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-test.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-test.iml" />
