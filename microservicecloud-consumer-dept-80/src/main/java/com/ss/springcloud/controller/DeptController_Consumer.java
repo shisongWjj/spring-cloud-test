@@ -2,6 +2,9 @@ package com.ss.springcloud.controller;
 
 import com.ss.springcloud.entities.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,6 +28,9 @@ public class DeptController_Consumer {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    LoadBalancerClient loadBalancerClient;
+
     @RequestMapping(value = "/consumer/dept/add")
     public boolean add(Dept dept){
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add",dept,Boolean.class);
@@ -42,7 +48,10 @@ public class DeptController_Consumer {
 
     @RequestMapping(value = "/consumer/dept/discovery")
     public Object discovery() {
-        return restTemplate.getForObject(REST_URL_PREFIX + "dept/discovery",Object.class);
+        ServiceInstance serviceInstance = loadBalancerClient.choose("MICROSERVICECLOUD-DEPT");
+        String url = String.format("http://%s:%s/",serviceInstance.getHost(),serviceInstance.getPort());
+        return restTemplate.getForObject(url + "dept/discovery",Object.class);
+        /*return restTemplate.getForObject(REST_URL_PREFIX + "dept/discovery",Object.class);*/
     }
 
 
